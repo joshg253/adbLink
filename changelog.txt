@@ -1,0 +1,796 @@
+adbLink 2.06 changelog
+
+adbLink now works with Kodi for Android/Windows/macOS/Linux
+for non-Android functions such as backup/restore, edit XML,
+etc.
+
+Built-in XML/Text editor.
+
+Kodi 17 cache xml settings added.
+
+Cache help html rewritten to reflect changes
+
+Error handler for Android ADB added
+(hopefully will prevent adb error loops)
+
+Test (logcat) function for ADB connections added
+
+Uninstall APK: filter added for search
+
+Cache settings can now be copied to clipboard then
+pasted into existing advancedsettings.xml
+
+Help files re-added
+(missed in changeover to new adbLink name)
+
+Help files for various new functions added.
+
+Copy path to clipboard: This function will 
+make busybox applets available to ADB shell.
+
+QT_AUTO_SCREEN_SCALE_FACTOR=1 added for
+high DPI screen scaling
+
+
+
+
+adbLink 2.05 changelog
+
+View/copy Kodi log files
+
+Bug condition in busybox installation fixed.
+
+Screen capture function restored. See help.
+
+"Device Unauthorized" help file added.
+
+For drive mounting & samba please use 
+play store services. 
+
+adbLink 2.04 changelog
+
+Application name change per
+demand from Amazon's lawyers.
+
+New name: adbLink
+
+QT framework updated to v5.6
+
+Deprecated Fire OS functions removed
+
+3rd-party root functions removed
+
+
+adbLink 2.03 changelog
+
+SPMC package name changed
+
+Minor code cleanup
+
+
+adbLink 2.02b changelog
+
+More fixes to restore routines
+
+
+adbLink 2.02a changelog
+
+Fixes to restore routines.
+
+
+adbLink 2.02 changelog
+
+adbLink is now compatible with most Android devices
+
+WIFI/USB Remote control added 
+
+Installs rbox v3 recovery on 4K AFTVs
+
+Windows download is now an installer instead of zip file
+
+Kodi partiton value initialzed for new devices.
+
+Routine added to detect Amazon OS5.
+
+Routine added to identify Amazon/Nvidia devices.
+
+Dropbear removed, OpenSSH added. Root no longer required
+
+FireStarter install moved to the menu->file section
+
+Help Backup section expanded.
+
+Device Offline status detected.
+
+Device Unauthorized status detected.
+
+FireStarter installation moved to File->Menu
+
+For rooted Lollipop devices:
+SELinux set to permissive with external drive mounts.
+SELinux set to Enforcing after external drive umounts.
+
+At boot options require a rom with configurable startup script.
+
+adbLink 2.01 changelog
+
+Autoconnect turned off, no
+autoconnect at startup, edit
+or other routines. 
+
+Edit validation routines added for
+description, device address,
+package-name and file path.
+
+New field "root path" added to
+device record. Tracks where
+Kodi data is installed.
+e.g. /sdcard/, /storage/sdcard1/, etc.
+
+cache write to advancedsettings.xml
+moved to standalone dialog
+
+XBMC preset removed from device setup.
+
+MainWindow set to fixed size.
+
+Splash Screen and Cache buttons
+added to main window
+
+Standard and root function buttons
+moved into separate groups
+
+
+
+adbLink 2.0 changelog
+
+Updated for Fire TV 2.0 - Fire OS 5
+
+Data relocation destinations added:
+/storage/sdcard1
+/storage/usbotg
+/storage/usbdisk
+
+Backup now recognizes external locations
+
+Backup now works with drives other than C:
+
+Restore now restores to external locations
+
+Various bugfixes
+
+ 
+
+
+
+
+
+
+
+
+adbLink 1.31 changelog
+
+Splash Screen install fixed
+
+USB drivers updated
+
+FireStarter install added
+
+Llama options screen updated
+
+Various bug fixes
+
+
+
+adbLink 1.30 changelog
+
+Root users: "Busybox not installed" error fixed
+
+All users: TubiTV no longer works as a Kodi launcher,
+removed from Llama Options.
+
+
+
+adbLink 1.29 changelog
+
+
+adbLink database supports unlimited devices
+USB mode now automatic
+See connected devices at a glance
+Ad Hoc directory browsing for push/pull/delete
+Updated hyperlinked help
+Many bug fixes
+
+
+adbLink 1.28 changelog
+
+Busybox non-root install and path fixed
+for USB mode.
+
+Linux: sucheck delay added
+
+
+adbLink 1.27 changelog
+
+Qt Framework updated from 5.3.2 to 5.4.2 
+
+Llama Options dialog updated to correct
+misalignment in some situations.
+
+
+adbLink 1.26 changelog
+
+Google adb for Windows/OSX/Linux updated to 1.0.32.
+
+Classic TV Llama routine updated to Tubi TV. Classic
+TV has been replaced by Tubi TV. Docs/Icons/filepaths updated.
+
+TVMC packagename/filepath updated based on 
+new specifications from TVMC development team.
+
+USB mode tested with Fire TV.
+
+Documentation updated to reflect USB debugging
+availability for Fire TV.  
+
+regression error, embedded spaces in filename issue in
+push/pull/delete fixed
+
+
+
+
+adbLink 1.25 changelog
+
+/data swap init.bueller.sh script edited
+for pre-rooted firmware 51.1.5. Thanks to
+derpeter@xda for the fix.
+
+code edit for cache routine in device setup
+to put advancedsettings.xml in extUsb if required.
+
+Backup routine fixed to allow for relocated Thumbnails.
+
+USB mode routines expanded. The USB mode checkbox now
+attempts to detect if a device is connected via USB. A
+USB via console checkbox is provided as a backup method
+if a USB connection is made manually at the adbLink console.
+
+Please refer to the USB mode/USB via console help file
+for more detail.
+
+adbLink 1.24 changelog
+
+Kodi/Fork data move to/from extUsb
+
+Kodi/Fork Thumbnails move to/from extUsb
+
+Backup/Restore works with moved data/Thumbnails
+
+Push/Pull/Delete works with moved data/Thumbnails
+
+HTML help added for Kodi data move options
+
+extUsb added to Push/Pull/Delete dropdown choices
+
+
+adbLink 1.23 changelog
+
+Busybox added for non-root users.
+
+Bug writing Linux scripts from Windows
+systems fixed.
+
+init.d scripts reordered to allow for a
+initial sleep script to pause init.d
+run-levels processing when needed.
+
+Tooltips added to share mounting dialog.
+
+Delete boot mount script button added to
+share mounting dialog.
+
+All ssh control commands are bash scripts,
+editable by user. There are three:
+
+sshstart
+sshstop
+sshstatus
+
+Dropbear ssh is now password-free. Required
+key files for Windows PuTTY and Mac/Linux openssh are
+supplied. Both Fire TV and PC-side installation
+are automated.
+
+SSH server starts on demand. Start at boot option
+available.
+
+SSH/SFTP html help files updated.
+
+Bug where file pull breaks when target folder
+has embedded spaces is fixed.
+
+Bug allowing empty 04mntshares script fixed.
+
+Bug pulling screenshots into directories with
+embedded spaces fixed.
+
+Existence check for pull directory added.
+
+TVMC added to media center presets in setup dialog.
+
+TVMC added to Llama options.
+
+
+adbLink 1.22 changelog
+
+Llama Options now include SPMC, Koyring's
+fork of Kodi. Start SPMC at boot, place
+the SPMC icon in the FTV's Recent area.
+
+Llama Options now gives you the
+choice of Ikono TV or Classic TV
+as your switching program. 
+
+Device Setup "Updates" button message changed from
+"No update available" to "No adbLink update available"
+
+Various typos in html help fixed.
+
+Mount USB drives at boot checkbox moved to Device Setup.
+
+System Tools installation now checks for backups of drive
+mount & /data swap scripts and offers to restore them.
+
+Samba now completely removed when System Tools are
+uninstalled. 
+
+Samba installation now seperate from System Tools
+installation. System tools is a prerequisite.
+
+Installation of stock recovery and clockwork mod 
+are now seperate functions.
+
+rbox full unlock added. Currently, the unlock cannot be reversed.
+
+Kodi/XBMC/SPMC filepaths and packagenames pre-programmed
+in Device Setup dialog.
+
+Device Setup: SSH at boot, Mount at boot and Amazon updates
+These root functions require that the checkbox be
+checked/unchecked by the user. Nothing automatic occurs.
+
+
+adbLink 1.20 changelog
+
+Timestamp/Version number/OS header added to log file
+
+Main window combobox now contains device description, not IP.
+
+Samba server off/on indicator added
+
+File Path field added to device database. This is to 
+accomodate Kodi forks that diverge from /file/.kodi/ 
+or /file/.xbmc/ file path, e.g. SPMC. 
+
+Device Setup Help re-written to reflect new layout.
+
+Root requirement to check Kodi running state removed.
+
+The adbLink Backup format is now similar to the format of the
+Kodi Backup Addon.
+
+Backups made by the Kodi Backup Addon can be restored by adbLink.
+ 
+Main window "Setup" button now reads "Device Setup"
+
+Busybox v1.24 smaller, more applets and HFS+ Label/UUID support
+
+New SSH. Recompiled for more speed, less size and no 2gb file
+size limit with sftp/scp.
+
+adbLink now attempts connection with first device at startup.
+
+adbLink now attempts connection when device is selected 
+from combobox.
+
+When uninstalling System Tools, backups are made of the
+mntdrives.sh script and if it exists mntdata.sh
+
+Llama Options for XBMC/Kodi on boot simplified.
+
+Llama updated to 1.2014.11.20.2003
+
+"Backup Kodi" button now reads "Backup"
+
+"Restore Kodi" button now reads "Restore"
+
+LLama Options "Boot AFTV to Kodi" replaces "Kodi" with "Media Center"
+
+Llama Options "Link Kodi to ikonoTV" replaces "Kodi" with "Media Center"
+
+
+adbLink 1.18 changelog
+=======================
+Bug in aftv-unlock detection fixed.
+
+Check for enduser-added spaces in app filename.
+
+Fixed initialization bug when switching between
+devices via the combobox.
+
+Fixed bug in root detection function.
+
+NTFS write speeds fixed. 
+
+Mount HFS+ (Mac) USB drives
+
+Three presets added to Kodi Cache selection in
+Device Setup
+
+Help Selection: "Preferences Dialog" changed to "Device Setup"
+
+
+
+adbLink 1.17 changelog
+=======================
+
+Menu option "Preferences" changed to "Device Setup"
+New button "Setup" added, directly to right of IP combobox
+
+Both options above take you to the screen where device
+data is entered: ip address, description, cache settings,etc
+
+aftv-unlock detection. Warns if program isn't installed.
+
+Linux x-terminal-emulator changed to gnome-terminal.
+
+Backup Fire TV, Restore to Fire TV Stick added to Video Help
+
+adbLink 1.16 changelog
+=======================
+Multiple device database added. Manage up to 10
+Fire TV devices, each with it's own individual
+settings (Kodi cache, pull directory, description,etc)
+
+Mount CIFS/NFS shares ad hoc or at boot.
+
+USB Mode for the Fire TV Stick. Manage Kodi
+via USB.
+
+Windows console now has adb automatically added
+to the system path. Linux/OS X users have a command
+to accomplish the same.
+
+Video Help menu added. This links to YouTube
+videos showing various adbLink functions in action.
+Currently:
+
+Using USB Mode
+Installing WinUSB Drivers
+Using Multiple Devices with adbLink
+Mounting CIFS/NFS Shares with adbLink
+Installing adbLink and Kodi
+
+Kodi cache settings added. Choose any cache values
+for Kodi you need, not limited to a few presets.
+
+Menu function "Install System Tools" replaces
+former function "Install Busybox". This encompasses
+the installation of Busybox, Samba and system and
+init scripts required by adbLink.
+
+Linux bug for console fixed
+Ikono TV icons changed
+Link to Kodi download added
+Bug in packagename path fixed
+Various help files added
+Minor bugs fixed as found.
+
+
+adbLink 1.15 changelog
+=======================
+
+
+Kodi is now chosen by default.  
+
+Console option for adb command-line 
+
+Various minor bugs fixed, forms adjusted, etc.
+
+adbLink 1.14 changelog
+=======================
+
+Help system completely rebuilt.
+Opens with alphabetized menu of
+links to individual topics. 
+
+Rbox's CWM Recovery updated to 6.0.5.1.4
+
+Rbox's Bootloader lock/unlock added.
+
+Full Kodi support added. 
+
+Swap /data to external drive added.
+This feature allows you to use any
+USB flash storage device as the 
+FireTV's /data partition, giving
+you unlimited space for games,apps
+etc. This drive mounts by UUID. It
+does not depend on a fixed device
+location (/dev/block/sda1, etc).
+
+External drive mounting via UUID added.
+When you are mounting multiple drives
+there is no guarantee that the original
+device name (/dev/block/sda1, etc) will
+remain the same. Mounting by UUID insures
+that your drives mount in the same place
+every time. 
+
+Progress bar updater fine-tuned.  
+
+Various minor bugs fixed, forms adjusted, etc.
+
+
+adbLink 1.12 changelog
+=======================
+
+Bug in XBMC file delete routine fixed
+
+CWM Recovery updated to 6.0.5.1.3
+
+Log file viewer added 
+
+various minor bugs fixed, forms adjusted, etc.
+
+adbLink 1.11 changelog
+=======================
+
+All XBMC options are now non-root.
+(hopefully)
+
+SSH helper apps updated.
+
+various minor bugs fixed, forms adjusted, etc.
+
+
+
+adbLink 1.10 changelog
+=======================
+
+All XBMC options are now non-root.
+
+SSH completely updated to new build
+
+SFTP added
+
+SSH and SFTP buttons added. PuTTY SSH & SFTP
+now included for Windows users.  
+
+Help updated for SSH
+
+various minor bugs fixed, forms adjusted, etc.
+
+
+adbLink 1.09 changelog
+=======================
+
+Llama dialog options fixed to work with non-root users.
+
+Clockwork Mod Recovery updated to 6.0.5.1.2.
+
+Scripting at boot changed to init.d system.
+
+SSH server option added.
+
+Windows adb shell keyboard bug fixed.
+
+Menu structure changed: Files menu contains 'universal' 
+functions, Root menu contains root-only functions.
+ 
+various minor bugs fixed, forms adjusted, etc.
+
+adbLink 1.08 changelog
+=======================
+
+Llama options changed to require ikonoTV rather than Classic TV
+due to geographic restrictions. Classic TV is only available in the US.
+
+adbLink check for Amazon Updates now operates in realtime,
+rather than depending on a database field. 
+
+adbLink check for USB drive persistence now operates in realtime,
+rather than depending on a database field. 
+
+Database fields for USB drive persistence and Amazon Updates removed.
+
+Linux bug installed apks not displayed in uninstall dialog fixed.
+
+Firmware installaton recovery directory not found bug fixed.
+
+Support for CWM recovery installation re-coded. Images:
+
+firetv-cwm_recovery-6.0.5.1.1.img 
+recovery-stock-51.1.0.img 
+
+are now included with adbLink 1.08 with permission from rbox.
+
+Help re-written for firmware and recovery installation.
+
+various minor bugs fixed, forms adjusted, etc.
+
+
+adbLink 1.07 changelog
+=======================
+Qt framework updated to 5.3.2
+
+Linux bug for file selection on usb devices fixed.
+
+Support for CWM recovery installation added.
+
+various minor bugs fixed, forms adjusted, etc.
+
+Help expanded.
+ 
+adbLink 1.06 changelog
+=======================
+
+The Windows adbLink folder can now be installed
+wherever you wish.  It has been tested under Windows 7
+and XP. Shortcuts to adbLink.exe  work as expected. 
+
+The adbLink folder is  where all files needed by adbLink.exe
+kept. This folder holds adb.exe, scripts and various other files,
+in addition to the adbLink.exe program. 
+
+Samba networking has been added. Click  "Mount" and after your
+usb storage mounts, it's exported via samba. Your /sdcard folder
+is exported as well. The server name is adblink and the exports 
+are /usb and /sdcard. Samba is persistent between boots if you 
+check mounting to be persistent. 
+
+In testing the adblink server and exported folders /sdcard and /usb
+are visible to Windows XP and 7, OS X Mavericks and Linux Mint. Drag
+and drop and other file management work as expected between the FireTV
+and clients on the network. 
+
+Credits and links provided for all helper programs.
+
+
+various minor bugs fixed, forms adjusted, etc.
+
+Help expanded.
+
+adbLink 1.05 changelog
+=======================
+
+Both the Windows version and the OS X version can now be installed
+wherever you wish.  
+
+The Windows version of adbLink ships with a folder, named 
+adbfiles. You can install the adbLink.exe program wherever
+you wish, as long as the adbfiles folder is installed there also.
+
+The adbfiles folder is  where all files needed by adbLink.exe
+kept. This folder holds adb.exe, scripts and various other files. 
+
+The OS X version of adbLink, adbLink.app is usually installed to
+the /Application folder on your Mac. However you can move it
+wherever you like. The Mac version of adbLink also has an adbfiles
+folder, but it's inside the adbLink.app bundle.
+
+adbLink now includes Llama, with permission from the developer at
+KebabApps.com. Llama allows us to:
+
+1. Boot AFTV directly to XBMC
+
+2. Connect XBMC to the Classic TV app. This allows starting XBMC from
+AFTV's upper level menus.
+
+3. Both of the above.
+
+The option to change the Classic TV icon to an XBMC or Kodi icon is
+included. This can also be reversed, restoring the Default Classic TV icon.
+
+
+The Preferences dialog has changed. If you open the 
+preferences dialog then exit without changes,  the
+"updates disabled/enabled" pop-up dialog is suppressed.  
+
+adbLink can now check for updates when it starts, and open
+the adbLink page to download the new version if desired.
+This option is on by default, but can be turned off in
+Preferences.
+
+Preferences also has a "Check for updates" button. 
+
+A dedicated button to change the XBMC splash screen has been added.
+This was previously possible using the "adb push" button, selecting the
+destination folder "media", but there have been requests for a 
+dedicated button. Elmerhuso's XBMC splash screen and a Kodi splash
+screen are included, and of course you can add your own. Drop them
+into the "splash" folder.  
+
+Clickable URL links are now included. Links include adbLink's home
+page, jocala.com/adblink.html, the XBMC wiki, and links to the forum
+topics where adbLink is supported, xda and xbmc. 
+
+version number changed to constant. 
+
+Help expanded.
+
+adbLink 1.04 changelog
+=======================
+
+Extensive log file now produced after each run.
+Function duration times recorded.
+XBMC restore bug fixed (restore prevented when XBMC running).
+Code calling external processes refactored for greater efficiency.
+Busybox install bug fixed (post-install file cleanup).
+Busybox uninstall bug fixed (post-uninstall file cleanup).
+USB unmounting tuned for multiple drives.
+ 
+adbLink 1.03 changelog
+
+USB drives/sticks now mount at /storage/usb/sd*
+Firmware install searches all /storage/usb/sd* for .bin and .zip files.
+USB Firmware install, Pull and Delete dialogs now utilize a file browser.
+Help system updated to reflect changes.
+
+
+adbLink 1.02 changelog
+
+addition of ntfs-3g for mounting ntfs media
+addition of mount.exfat-fuse for mounting exfat media
+addition of mounting for ext2,ext3,ext4 media
+mount now addresses all connected USB media, not just /dev/block/sda
+edit of help file to reflect mount changes
+screen shots saved to unique filenameadbLink 1.01 changelog
+
+adbLink 1.01 changelog
+=======================
+
+AFTV Firmware upgrade/downgrade
+
+USB /dev/block/sda1 drive/stick mounting with
+optional persistence
+
+Form redesign to support new features
+
+Screen shots are now saved to pull folder
+
+Help file update for new features
+
+bug cleanup in win32 file deletion routines
+
+=========================
+
+adbLink V1.0 changelog
+
+Fix for OS X Fire TV root
+Application home directory change: “adbLink”
+Addition of preferences dialog 
+Addition of support for XBMC forks (BeyondXBMC, XBMCLauncher, etc)
+Pulled files folder preference
+Addition of /sdcard/ to list of push/pull folders
+Addition of file deletion
+Towelroot and SuperSU updated
+Database error checks
+Reboot Device
+Reboot Recovery
+Fire TV updates off/on
+Mount /system  partition rw/ro
+Take screen shots
+Install/Uninstall Busybox
+Help file additions
+
+
+
+
+
+
+
+
+
+
+

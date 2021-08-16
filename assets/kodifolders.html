@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Kodi Folders and Files</title></head><body>
+<b><u>Kodi Folder Structure</u></b>
+<p>
+
+addons - This is the Kodi addon directory. So any addon you install will be downloaded here. If an addon causes problems and stops Kodi from starting, you can manually delete it from this folder.
+<p>
+media - A place for media files. But this is typically empty and not used. Add media sources instead.
+<p>
+sounds - For customizing sounds. Typically empty and not used.
+<p>
+system - For system customization. Typically empty and not used.
+<p>
+temp - For storing temporary files such cookies, weather information, subtitles, etc. This folder may also contains Kodi logs (or one folder up). When troubleshooting make sure to check the log files located here.
+<p>
+userdata - Customized user files such as GUI settings, addon data, media sources, databases, thumbnails, advancedsettings.xml, etc. are stored here. For tweaking you should know Kodi user data location.
+<p> 
+Below are the files and folders contained within Kodi userdata folder:<p>
+addon_data - All your addon data are stored here. If you want to manually reset an addon then delete its folder located here.
+<p>
+Database - All sqlite3 databases (Music, Videos, EPG, thumbnails, addon databases, etc.) are stored here. MySQL/MariaDB files are not stored here, their location is determined by your database server configuration.
+<p>
+Keymaps - Stores all your custom keyboard and remote mappings to customize your Kodi remote control.
+<p>
+mediasources.xml - This XML file stores any remote folder locations (eg. NFS, SAMBA, FTP, etc) that you manually add to your Kodi.<p>
+
+profiles.xml - In case you have multiple Kodi users with different profiles, their information will be stored in this file.
+<p>
+sources.xml - In Kodi you add your video and music locations. Once added they are stored in this file.
+<p>
+advancedsettings.xml - One of the most important files to control and tweak Kodi.
+guisettings.xml - All your skin settings are stored here.
+<p>
+passwords.xml - Stores any usernames and passwords to media sources listed in mediasources.xml.
+<p>
+playlists - All playlists are stored in this folder. You may manually edit if you know how.
+<p>
+RssFeed.xml - This file contains all RSS feeds from which the scrolling news in Kodi homescreen is scraped.
+<p>
+Thumbnails = Thumbnails folder contains cached thumbnails of all images (posters, fanart, etc.) that appear on your screen (not limited to Library items). This folder may need periodic cleaning, it can get quite big.
+<p>
+Kodi's data area changes depending on your type of installation. The defaults are:<p>
+Android: /sdcard/Android/data/org.xbmc.kodi/files/.kodi<p>
+Linux: /home/<your_user_name>/.kodi<p>
+macOS: /Users/<your_user_name>/Library/Application Support/Kodi<p>
+Windows: /Users/<your_user_name>/AppData/Roaming/Kodi<p>
+You can also point adbLink to a custom Kodi data area, e.g. a network share.
+<p>
+If you have questions or comments, please email jocala@jocala.com or visit one of the forums linked below. adbLink produces a log file, adblink.log, with each run. Include it in your email or post if you're having problems.<p>
+<a href="menu.html">main menu</a>
+</body</html>
